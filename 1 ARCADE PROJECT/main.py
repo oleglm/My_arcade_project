@@ -39,9 +39,9 @@ class GameView(arcade.Window):
 
         self.reset_score = True
 
-        self.collect_coin_sound = arcade.load_sound(r"C:\Users\olegg\Downloads\Spy_yes01.wav")
-        self.jump_sound = arcade.load_sound(r"C:\Users\olegg\Downloads\Vote_yes.wav")
-        self.gameover_sound = arcade.load_sound(r"C:\Users\olegg\Downloads\Killsound.wav")
+        self.collect_coin_sound = arcade.load_sound(r"Spy_yes01.wav")
+        self.jump_sound = arcade.load_sound(r"Vote_yes.wav")
+        self.gameover_sound = arcade.load_sound(r"Killsound.wav")
 
     def setup(self):
         layer_options = {
@@ -62,7 +62,7 @@ class GameView(arcade.Window):
 
 
         self.coin_texture = arcade.load_texture(
-            r"C:\Users\olegg\Downloads\180px-Bread_Baguette.png"
+            r"180px-Bread_Baguette.png"
         )
 
         # Apply custom texture to coins
@@ -71,7 +71,7 @@ class GameView(arcade.Window):
             coin.scale = COIN_SCALING
 
         self.player_texture = arcade.load_texture(
-            r"C:\Users\olegg\Downloads\NicePng_spy-png_2377506.png"
+            r"NicePng_spy-png_2377506.png"
         )
 
         self.scene.add_sprite_list_after("Player", "Foreground")
